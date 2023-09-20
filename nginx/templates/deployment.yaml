@@ -4,6 +4,9 @@ metadata:
   name: {{ include "nginx.fullname" . }}
   labels:
     {{- include "nginx.labels" . | nindent 4 }}
+  annotations:
+    argocd-image-updater.argoproj.io/track: "true"
+    argocd-image-updater.argoproj.io/frequency: "10m"
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
