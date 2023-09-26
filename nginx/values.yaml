@@ -8,7 +8,7 @@ image:
   repository: asia-south1-docker.pkg.dev/nimble-alpha-396907/cloud-run-source-deploy/gcp_repo/nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "53ec401dca46d74a42419518cdaaf79eaf53d8d4"
+  tag: "e53ce56f3bfcd3fa3675122b1b856880b23b1650"
 
 imagePullSecrets: []
 nameOverride: ""
